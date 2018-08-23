@@ -1,4 +1,4 @@
-This dataset is made up of data from 100+ patients processed through an epilepsy centre in Guangzhou, China. 
+# Proximally automatic scripts for the localization of multiple highdensity depth electrodes
 
 For each patient (where dataset is complete), we have pre-op and post-op CT scans, a T1 MRI, sEEG recordings saved as .edf files and associated event markers. 
 
@@ -18,6 +18,4 @@ Image pre-processing steps have included: Co-registration of CT1 (pre-op) and MR
 
 3. cluster_electrodes.m -- this script performs clustering of sEEG electrodes. Starting from outer edges of mask for initial clustering and tracking inwards using k-means clustering and singular value decomposition line fitting, each voxel in the masked CT image is allocated automatically to an electrode in the array. Manual interaction via a GUI allows correction at the initial clustering stage. 
 
-4. normalise_contacts.m -- this function performs segmentation and normalisation of the T1 image for a patient using FSL, and applied the resultant warping matrix to the previously generated electrode contact coordinates for that patient. The output is a .mat file containing a data structure which holds electrode names, native voxel coordinates, tissue probabilities for each contact in native space and MNI converted coordinates for each contact. 
-
-sEEG data have not yet been preprocessed (May 2018). 
+4. normalise_contacts.m -- this function performs segmentation and normalisation of the T1 image for a patient using FSL, and applied the resultant warping matrix to the previously generated electrode contact coordinates for that patient. The output is a .mat file containing a data structure which holds electrode names, native voxel coordinates, tissue probabilities for each contact in native space and MNI converted coordinates for each contact.
