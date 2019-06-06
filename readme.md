@@ -1,9 +1,5 @@
 # Proximally automatic scripts for the localization of multiple highdensity depth electrodes
 
-For each patient (where dataset is complete), we have pre-op and post-op CT scans, a T1 MRI, sEEG recordings saved as .edf files and associated event markers. 
-
-At the top level of the repository, see spreadsheet 'PatientInfo' for data, processing and demographic info/notes. The spreadsheet 'chinese_number_conversion.xlsx' give the correspondence between the original chinese character format and the assigned numeric IDs. Both files give indications about incomplete datasets. 
-
 The archive is organised as follows:
 1. Scripts - containing, unsurprisingly (!), scripts
 2. Data - a complete record of the raw data for each individual along with surgical planning and clinical info
